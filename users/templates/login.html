@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lisa Chats Auth</title>
+</head>
+<body>
+    <form action="">
+        <h1>Log in to Lisa Chats</h1>
+        <input type="text" name="username" placeholder="Username">
+        <input type="password" name="password" placeholder="Password">
+        <button type="submit">Sign in</button>
+        <a href="">Create an account</a>
+        <small>© DizenStudios 2025</small>
+    </form>    
+</body>
+</html>
+
+<style>
+    :root{
+        --items_blue: rgb(223, 255, 255);
+        --panel_blue: rgb(172, 255, 251);
+        --items_blue_hover: rgb(139, 232, 228);
+        --primary_blue: rgb(0, 206, 206);
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    body{
+        overflow: hidden;
+        background-color: var(--primary_blue);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        animation: bg 3s infinite alternate;
+    }
+    form{
+        background-color: var(--panel_blue);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+        border-radius: 8px;
+        margin-top: 10%;
+    }
+    input{
+        background-color: var(--items_blue);
+        border-radius: 3px;
+        padding: 5px;
+        font-size: 20px;
+    }
+    input:hover{
+        background-color: var(--items_blue_hover);
+    }
+    button{
+        background-color: var(--items_blue);
+        border-radius: 3px;
+        padding: 5px;
+        font-size: 20px;
+    }
+    button:hover{
+        background-color: var(--items_blue_hover);
+    }
+    small{
+        font-size: 15px;
+    }
+    a{
+        color:black;
+        text-decoration: none;
+    }
+
+    @keyframes bg{
+        0% {
+            background-color: rgb(15, 171, 171);
+        }
+        100% {
+            background-color: rgb(13, 154, 154);
+        }
+    }
+</style>
